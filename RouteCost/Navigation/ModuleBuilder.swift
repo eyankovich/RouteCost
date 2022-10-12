@@ -14,7 +14,6 @@ class ModulBuilder {
     static var shared = ModulBuilder()
     
     // MARK: - Methods
-    
     // Method whitch return RouteViewController
     func showRouteViewController() -> (view: RouteViewController, presenter: RoutePresenter) {
         let view = RouteViewController()

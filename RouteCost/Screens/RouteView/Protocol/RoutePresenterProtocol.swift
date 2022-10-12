@@ -5,7 +5,7 @@
 //  Created by Егор Янкович on 6.10.22.
 //
 
-import Foundation
+import UIKit
 
 protocol RoutePresenterProtocol {
     var presenter: RoutePresenterViewProtocol? { get set }
@@ -13,5 +13,8 @@ protocol RoutePresenterProtocol {
 
 protocol RoutePresenterViewProtocol {
     var view: RoutePresenterProtocol? { get set }
+    var showBottomSheet: (() -> ())? { get set }
     init(view:RoutePresenterProtocol)
+    func viewDidLoad()
+ //   func configureGoogleMap() -> GMSMapView
 }

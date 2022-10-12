@@ -10,8 +10,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RouteViewController" customModule="RouteCost" customModuleProvider="target">
             <connections>
-                <outlet property="mapView" destination="g20-iJ-Izm" id="6uR-kj-vhx"/>
-                <outlet property="searchBar" destination="3Kq-vd-9eO" id="blh-9x-czV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,29 +17,8 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="g20-iJ-Izm">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                </mapView>
-                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="3Kq-vd-9eO">
-                    <rect key="frame" x="20" y="64" width="374" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="UlW-yL-bwQ"/>
-                    </constraints>
-                    <textInputTraits key="textInputTraits"/>
-                </searchBar>
-            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <constraints>
-                <constraint firstItem="3Kq-vd-9eO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="3RB-HB-pmy"/>
-                <constraint firstItem="3Kq-vd-9eO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="9RT-Yb-eQt"/>
-                <constraint firstAttribute="bottom" secondItem="g20-iJ-Izm" secondAttribute="bottom" id="QJ5-dK-ZyF"/>
-                <constraint firstItem="g20-iJ-Izm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="R2Z-oY-eqY"/>
-                <constraint firstItem="g20-iJ-Izm" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="pf7-gn-mJJ"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3Kq-vd-9eO" secondAttribute="trailing" constant="20" id="s2f-T1-cd4"/>
-                <constraint firstItem="g20-iJ-Izm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="sOW-Qk-dom"/>
-            </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
         </view>
     </objects>
