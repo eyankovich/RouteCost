@@ -6,16 +6,21 @@
 //
 
 import UIKit
+import MapKit
 
 class SearchResultViewController: UIViewController {
-
+    
     // MARK: - @IBOutlet Variables
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Variables
     let cellId = "RouteCellTableViewCell"
-    private var places: [Place] = []
+    var handleMapSearchDelegate: HandleMapSearch? = nil
+
+    // MARK: - Private Variables
+    private var places: [MKMapItem] = []
     
+    // MARK: - Live cykle
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTable()
@@ -26,9 +31,10 @@ class SearchResultViewController: UIViewController {
         tableView.register(UINib(nibName: cellId, bundle: nil), forCellReuseIdentifier: cellId)
         tableView.delegate = self
         tableView.dataSource = self
+        self.handleMapSearchDelegate = self
     }
     
-    public func update(with places: [Place]) {
+    public func update(with places: [MKMapItem]) {
         self.places = places
         tableView.reloadData()
     }
@@ -48,7 +54,15 @@ extension SearchResultViewController: UITableViewDataSource, UITableViewDelegate
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedItem = places[indexPath.row].placemark
+        handleMapSearchDelegate?.dropPinZoomIn(placemark: selectedItem)
         tableView.deselectRow(at: indexPath, animated: true)
+        dismiss(animated: true)
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
+    
 }
 

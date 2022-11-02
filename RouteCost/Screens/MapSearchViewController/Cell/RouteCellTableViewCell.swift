@@ -10,6 +10,8 @@ import UIKit
 class RouteCellTableViewCell: UITableViewCell {
 
     @IBOutlet weak var cellTitleLabel: UILabel!
+    @IBOutlet weak var naviImage: UIImageView!
+    @IBOutlet weak var arrowImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

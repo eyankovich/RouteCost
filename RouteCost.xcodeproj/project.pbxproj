@@ -9,10 +9,16 @@
 /* Begin PBXBuildFile section */
 		6815472328F42B5200DFF5EC /* RouteCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6815472128F42B5200DFF5EC /* RouteCellTableViewCell.swift */; };
 		6815472428F42B5200DFF5EC /* RouteCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6815472228F42B5200DFF5EC /* RouteCellTableViewCell.xib */; };
-		6815472628F4314B00DFF5EC /* GooglePlaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6815472528F4314B00DFF5EC /* GooglePlaceManager.swift */; };
+		6815472628F4314B00DFF5EC /* SearchPlacesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6815472528F4314B00DFF5EC /* SearchPlacesManager.swift */; };
 		6815472C28F46CF000DFF5EC /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6815472A28F46CF000DFF5EC /* SearchResultViewController.swift */; };
 		6815472D28F46CF000DFF5EC /* SearchResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6815472B28F46CF000DFF5EC /* SearchResultViewController.xib */; };
 		6815472F28F495BC00DFF5EC /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6815472E28F495BC00DFF5EC /* LocationManager.swift */; };
+		681B4B74291153E600ADF5AB /* GoogleGeocodingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681B4B73291153E600ADF5AB /* GoogleGeocodingModel.swift */; };
+		681B4B7929117F9400ADF5AB /* ApiRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681B4B7829117F9400ADF5AB /* ApiRequestManager.swift */; };
+		681B4B7C2911906300ADF5AB /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681B4B7B2911906300ADF5AB /* Requests.swift */; };
+		681B4B7F2911949A00ADF5AB /* MapBottomSheetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681B4B7E2911949A00ADF5AB /* MapBottomSheetProtocol.swift */; };
+		681B4B822911968E00ADF5AB /* MapBottomViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681B4B812911968E00ADF5AB /* MapBottomViewPresenter.swift */; };
+		68A7196B290974F1009B7360 /* LocationBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A7196A290974F1009B7360 /* LocationBinder.swift */; };
 		68EF848828EF10B500EB4822 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EF848728EF10B500EB4822 /* AppDelegate.swift */; };
 		68EF848A28EF10B500EB4822 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EF848928EF10B500EB4822 /* SceneDelegate.swift */; };
 		68EF849228EF10B500EB4822 /* RouteCost.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 68EF849028EF10B500EB4822 /* RouteCost.xcdatamodeld */; };
@@ -40,10 +46,16 @@
 		10B5342AC0CB36B631F86824 /* Pods-RouteCost.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouteCost.debug.xcconfig"; path = "Target Support Files/Pods-RouteCost/Pods-RouteCost.debug.xcconfig"; sourceTree = "<group>"; };
 		6815472128F42B5200DFF5EC /* RouteCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteCellTableViewCell.swift; sourceTree = "<group>"; };
 		6815472228F42B5200DFF5EC /* RouteCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RouteCellTableViewCell.xib; sourceTree = "<group>"; };
-		6815472528F4314B00DFF5EC /* GooglePlaceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlaceManager.swift; sourceTree = "<group>"; };
+		6815472528F4314B00DFF5EC /* SearchPlacesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlacesManager.swift; sourceTree = "<group>"; };
 		6815472A28F46CF000DFF5EC /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		6815472B28F46CF000DFF5EC /* SearchResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultViewController.xib; sourceTree = "<group>"; };
 		6815472E28F495BC00DFF5EC /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		681B4B73291153E600ADF5AB /* GoogleGeocodingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleGeocodingModel.swift; sourceTree = "<group>"; };
+		681B4B7829117F9400ADF5AB /* ApiRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestManager.swift; sourceTree = "<group>"; };
+		681B4B7B2911906300ADF5AB /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
+		681B4B7E2911949A00ADF5AB /* MapBottomSheetProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBottomSheetProtocol.swift; sourceTree = "<group>"; };
+		681B4B812911968E00ADF5AB /* MapBottomViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBottomViewPresenter.swift; sourceTree = "<group>"; };
+		68A7196A290974F1009B7360 /* LocationBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationBinder.swift; sourceTree = "<group>"; };
 		68EF848428EF10B500EB4822 /* RouteCost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RouteCost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68EF848728EF10B500EB4822 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68EF848928EF10B500EB4822 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,14 +101,64 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		6815472728F434E700DFF5EC /* SearchViewController */ = {
+		6815472728F434E700DFF5EC /* MapSearchViewController */ = {
 			isa = PBXGroup;
 			children = (
 				6815472028F3064E00DFF5EC /* Cell */,
 				6815472A28F46CF000DFF5EC /* SearchResultViewController.swift */,
 				6815472B28F46CF000DFF5EC /* SearchResultViewController.xib */,
 			);
-			path = SearchViewController;
+			path = MapSearchViewController;
+			sourceTree = "<group>";
+		};
+		681B4B72291153D100ADF5AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				681B4B73291153E600ADF5AB /* GoogleGeocodingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		681B4B7729117F8100ADF5AB /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				681B4B7829117F9400ADF5AB /* ApiRequestManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		681B4B7A2911905000ADF5AB /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				681B4B7B2911906300ADF5AB /* Requests.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		681B4B7D2911948300ADF5AB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				681B4B812911968E00ADF5AB /* MapBottomViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		681B4B802911967400ADF5AB /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				681B4B7E2911949A00ADF5AB /* MapBottomSheetProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		681EEA3029103E59004B7536 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				681B4B7A2911905000ADF5AB /* Requests */,
+				681B4B7729117F8100ADF5AB /* Manager */,
+				681B4B72291153D100ADF5AB /* Model */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		68EF847B28EF10B400EB4822 = {
@@ -120,8 +182,9 @@
 		68EF848628EF10B500EB4822 /* RouteCost */ = {
 			isa = PBXGroup;
 			children = (
-				68EF84BA28EF240700EB4822 /* Extensions */,
 				68EF84A328EF110D00EB4822 /* Apllication */,
+				681EEA3029103E59004B7536 /* Networking */,
+				68EF84BA28EF240700EB4822 /* Extensions */,
 				68EF84A228EF110200EB4822 /* Managers */,
 				68EF84A028EF10F000EB4822 /* Navigation */,
 				68EF84A128EF10F900EB4822 /* Screens */,
@@ -141,17 +204,9 @@
 			path = TabBarController;
 			sourceTree = "<group>";
 		};
-		68EF849F28EF10E100EB4822 /* NavigationController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NavigationController;
-			sourceTree = "<group>";
-		};
 		68EF84A028EF10F000EB4822 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				68EF849F28EF10E100EB4822 /* NavigationController */,
 				68EF849E28EF10D700EB4822 /* TabBarController */,
 				68EF84BE28EF25BC00EB4822 /* ModuleBuilder.swift */,
 				68EF84C028EF25C900EB4822 /* MainCoordinator.swift */,
@@ -162,10 +217,10 @@
 		68EF84A128EF10F900EB4822 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				6815472728F434E700DFF5EC /* SearchViewController */,
-				68EF84CA28EF50CF00EB4822 /* MapBottomSheet */,
+				68EF84A728EF115100EB4822 /* MapView */,
+				68EF84CA28EF50CF00EB4822 /* MapViewBottomSheet */,
+				6815472728F434E700DFF5EC /* MapSearchViewController */,
 				68EF84A828EF116300EB4822 /* Profile */,
-				68EF84A728EF115100EB4822 /* RouteView */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -173,8 +228,9 @@
 		68EF84A228EF110200EB4822 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				6815472528F4314B00DFF5EC /* GooglePlaceManager.swift */,
+				6815472528F4314B00DFF5EC /* SearchPlacesManager.swift */,
 				6815472E28F495BC00DFF5EC /* LocationManager.swift */,
+				68A7196A290974F1009B7360 /* LocationBinder.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -213,14 +269,14 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
-		68EF84A728EF115100EB4822 /* RouteView */ = {
+		68EF84A728EF115100EB4822 /* MapView */ = {
 			isa = PBXGroup;
 			children = (
 				68EF84A628EF114700EB4822 /* Protocol */,
 				68EF84A528EF114300EB4822 /* View */,
 				68EF84A428EF113E00EB4822 /* Presenter */,
 			);
-			path = RouteView;
+			path = MapView;
 			sourceTree = "<group>";
 		};
 		68EF84A828EF116300EB4822 /* Profile */ = {
@@ -266,12 +322,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		68EF84CA28EF50CF00EB4822 /* MapBottomSheet */ = {
+		68EF84CA28EF50CF00EB4822 /* MapViewBottomSheet */ = {
 			isa = PBXGroup;
 			children = (
+				681B4B802911967400ADF5AB /* Protocol */,
+				681B4B7D2911948300ADF5AB /* Presenter */,
 				68EF84CB28EF50DE00EB4822 /* View */,
 			);
-			path = MapBottomSheet;
+			path = MapViewBottomSheet;
 			sourceTree = "<group>";
 		};
 		68EF84CB28EF50DE00EB4822 /* View */ = {
@@ -419,19 +477,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6815472628F4314B00DFF5EC /* GooglePlaceManager.swift in Sources */,
+				6815472628F4314B00DFF5EC /* SearchPlacesManager.swift in Sources */,
 				68EF84CF28EF50FA00EB4822 /* MapBottomSheetViewController.swift in Sources */,
 				68EF84C328EF2ACA00EB4822 /* RoutePresenterProtocol.swift in Sources */,
+				681B4B7929117F9400ADF5AB /* ApiRequestManager.swift in Sources */,
 				68EF848828EF10B500EB4822 /* AppDelegate.swift in Sources */,
+				681B4B7C2911906300ADF5AB /* Requests.swift in Sources */,
 				68EF84BD28EF242700EB4822 /* UIColorExtension.swift in Sources */,
 				68EF84C528EF2B3200EB4822 /* RoutePresenter.swift in Sources */,
 				68EF84AA28EF18AF00EB4822 /* TabBarController.swift in Sources */,
 				68EF84BF28EF25BC00EB4822 /* ModuleBuilder.swift in Sources */,
 				6815472F28F495BC00DFF5EC /* LocationManager.swift in Sources */,
 				68EF84B828EF213F00EB4822 /* RouteViewController.swift in Sources */,
+				681B4B7F2911949A00ADF5AB /* MapBottomSheetProtocol.swift in Sources */,
 				68EF84B028EF202200EB4822 /* ProfileViewController.swift in Sources */,
+				68A7196B290974F1009B7360 /* LocationBinder.swift in Sources */,
 				68EF849228EF10B500EB4822 /* RouteCost.xcdatamodeld in Sources */,
+				681B4B74291153E600ADF5AB /* GoogleGeocodingModel.swift in Sources */,
 				68EF84C128EF25C900EB4822 /* MainCoordinator.swift in Sources */,
+				681B4B822911968E00ADF5AB /* MapBottomViewPresenter.swift in Sources */,
 				6815472328F42B5200DFF5EC /* RouteCellTableViewCell.swift in Sources */,
 				6815472C28F46CF000DFF5EC /* SearchResultViewController.swift in Sources */,
 				68EF848A28EF10B500EB4822 /* SceneDelegate.swift in Sources */,
@@ -584,6 +648,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -613,6 +678,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

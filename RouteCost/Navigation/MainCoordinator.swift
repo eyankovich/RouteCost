@@ -29,8 +29,8 @@ class MainCoorinator: Coordinator {
         window.rootViewController = mapVC.view
         let view = mapVC.view
         view.presenter?.showBottomSheet = {
-            let detailViewController = MapBottomSheetViewController()
-            let nav = UINavigationController(rootViewController: detailViewController)
+            let detailViewController = ModulBuilder.shared.showMapBottomViewSheet()
+            let nav = UINavigationController(rootViewController: detailViewController.view)
             nav.modalPresentationStyle = .pageSheet
             if let sheet = nav.sheetPresentationController {
                 sheet.detents = [.medium(), .large()]

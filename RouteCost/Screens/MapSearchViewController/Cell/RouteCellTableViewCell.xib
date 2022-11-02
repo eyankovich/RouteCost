@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RouteCellTableViewCell" rowHeight="102" id="KGk-i7-Jjw" customClass="RouteCellTableViewCell" customModule="RouteCost" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="102"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1u-cU-Ubx">
+                        <rect key="frame" x="45" y="42" width="286" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pQQ-Hq-0eE">
+                        <rect key="frame" x="5" y="36.5" width="30" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="M8e-jn-nLw"/>
+                            <constraint firstAttribute="width" constant="30" id="vL6-KI-mAl"/>
+                        </constraints>
+                        <imageReference key="image" image="location.circle.fill" catalog="system" renderingMode="hierarchical-single">
+                            <hierarchicalColors>
+                                <color systemColor="systemGreenColor"/>
+                                <color systemColor="secondaryLabelColor"/>
+                                <color systemColor="tertiaryLabelColor"/>
+                            </hierarchicalColors>
+                        </imageReference>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YE4-oq-JZF">
+                        <rect key="frame" x="341" y="44" width="30" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="ybj-wO-ocG"/>
+                        </constraints>
+                        <imageReference key="image" image="chevron.right.2" catalog="system" symbolScale="small" renderingMode="original"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YE4-oq-JZF" firstAttribute="leading" secondItem="G1u-cU-Ubx" secondAttribute="trailing" constant="10" id="54v-oE-aHp"/>
+                    <constraint firstItem="YE4-oq-JZF" firstAttribute="centerY" secondItem="pQQ-Hq-0eE" secondAttribute="centerY" id="827-Jp-IOl"/>
+                    <constraint firstItem="pQQ-Hq-0eE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="CrJ-bX-Aa2"/>
+                    <constraint firstItem="pQQ-Hq-0eE" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="HDo-EV-32z"/>
+                    <constraint firstAttribute="trailing" secondItem="YE4-oq-JZF" secondAttribute="trailing" constant="5" id="aaM-yx-kKg"/>
+                    <constraint firstItem="G1u-cU-Ubx" firstAttribute="leading" secondItem="pQQ-Hq-0eE" secondAttribute="trailing" constant="10" id="dUk-UN-aSy"/>
+                    <constraint firstItem="G1u-cU-Ubx" firstAttribute="centerY" secondItem="pQQ-Hq-0eE" secondAttribute="centerY" id="yXR-NP-y0d"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="arrowImage" destination="YE4-oq-JZF" id="ePE-EC-Qet"/>
+                <outlet property="cellTitleLabel" destination="G1u-cU-Ubx" id="29v-gd-c7Q"/>
+                <outlet property="naviImage" destination="pQQ-Hq-0eE" id="Ne5-dU-dpv"/>
+            </connections>
+            <point key="canvasLocation" x="162.31884057971016" y="104.46428571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.right.2" catalog="system" width="128" height="105"/>
+        <image name="location.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -8,45 +8,69 @@
 import Foundation
 import CoreLocation
 
-class LocationManager: NSObject, CLLocationManagerDelegate {
-        
-    // MARK: - Static variable
-    static let shared = LocationManager()
+class LocationManager: NSObject {
     
-    // MARK: - Init
+    // MARK: - Static variable
+    
     
     // MARK: - Variables
-    var locationManager: CLLocationManager!
-    var currentLocation: CLLocation?
-    var preciseLocationZoomLevel: Float = 15.0
-    var approximateLocationZoomLevel: Float = 10.0
-    var myLocation: CLLocation?
+    var locationManager = CLLocationManager()
+    var newlocation = LocationBinder<CLLocation?>(nil)
     
-    private func launchLocation() {
-        locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization()
-        locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
-        locationManager.distanceFilter = kCLDistanceFilterNone
-        locationManager.allowsBackgroundLocationUpdates = true
-        locationManager.pausesLocationUpdatesAutomatically = false
-        locationManager.startUpdatingLocation()
+    // MARK: - Init
+    override init() {
+        super.init()
+        locationManager = CLLocationManager()
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.requestWhenInUseAuthorization()
+            locationManager.distanceFilter = 50
+            locationManager.startUpdatingLocation()
+            locationManager.delegate = self
     }
     
-    public func start() {
-        launchLocation()
+    // MARK: - Methods
+    func updateLocation(_ location: CLLocation) {
+        if location.speed > 0 {
+        }
+    }
+    
+    func myLocationDecoding() {
+        
     }
 }
 
-extension LocationManager {
-    
+// MARK: - Extensions
+extension LocationManager: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if let location = locations.first {
-            let latitude = location.coordinate.latitude
-            let longitude = location.coordinate.longitude
-            myLocation = CLLocation(latitude: latitude, longitude: longitude)
+        guard let locationLast = locations.last else {
+            return
         }
+        newlocation.value = locationLast
     }
-    func locationManager( _ manager: CLLocationManager, didFailWithError error: Error) {
-        
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("Location failed by reason: \(error.localizedDescription)")
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        switch status {
+        case .notDetermined:
+            print("notDetermined")
+            manager.requestWhenInUseAuthorization()
+        case .restricted:
+            print("restricted")
+            break
+        case .denied:
+            print("deined")
+            break
+        case .authorizedAlways: fallthrough
+        case .authorizedWhenInUse:
+            print("Status authorizedWhenInUse")
+        case .authorized:
+            print("Status authorized")
+
+        @unknown default:
+            fatalError()
+        }
     }
 }

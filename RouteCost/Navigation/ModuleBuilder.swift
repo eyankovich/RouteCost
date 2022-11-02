@@ -29,4 +29,14 @@ class ModulBuilder {
         view.presenter = presenter
         return(view, presenter)
     }
+    
+    func showMapBottomViewSheet() -> (view: MapBottomSheetViewController, presenter: MapBottomViewPresenter) {
+        let view = MapBottomSheetViewController()
+        let networkService = ApiRequestManager()
+        let presenter = MapBottomViewPresenter(view: view,
+                                               networkService: networkService,
+                                               locationManager: LocationManager())
+        view.presenter = presenter
+        return (view, presenter)
+    }
 }
