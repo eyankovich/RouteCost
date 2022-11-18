@@ -11,38 +11,42 @@ import MapKit
 
 class MapBottomViewPresenter: MapBottomViewPresenterViewProtocol {
     
+    var pointA: CLLocation?
     var view: MapBottomViewPresenterProtocol
     var networkService: ApiRequestManager
-    var locationManager: LocationManager
-    
+    var locationManager: LocationManagerProtocol
+    var mapDelegate: HandleMapSearch
     
     required init(view: MapBottomViewPresenterProtocol,
                   networkService: ApiRequestManager,
-                  locationManager: LocationManager) {
+                  locationManager: LocationManagerProtocol,
+                  mapDelegate: HandleMapSearch) {
         self.view = view
         self.networkService = networkService
         self.locationManager = locationManager
+        self.mapDelegate = mapDelegate
     }
-    
     
     func returnMyLocation(_ completion: @escaping (String) -> Void) {
         locationManager.newlocation.bind { [weak self] location in
+            guard let self = self else { return }
             guard let location = location else { return }
-            let geocoder = CLGeocoder()
-            geocoder.reverseGeocodeLocation(location, preferredLocale: .current) { placemarks, error in
-                guard let place = placemarks?.first, error == nil else {
-                    completion("error")
-                    return
-                }
-                var placeName = ""
-                if let locality = place.locality,
-                   let streetName = place.name,
-                   let country = place.country
-                {
-                    placeName += " \(streetName), \(locality), \(country)"
-                }
-                completion(placeName)
+            self.pointA = location
+            self.locationManager.reverseGeocode(location) { locationString in
+                completion(locationString)
             }
+        }
+    }
+    
+    func getDirection(mapView: MKMapView, selectedPin: MKPlacemark?, myLocation: CLLocation?) {
+        locationManager.getDirection(mapView: mapView, selectedPin: selectedPin, myLocation: myLocation)
+
+    }
+    
+    func returnDistance(_ completion: @escaping (String) -> Void) {
+        guard let pointB = view.destenationLocation else { return }
+        locationManager.getDistanceBeetweenTwoPoints(pointA, pointB) { distance in
+            completion(distance)
         }
     }
     
@@ -59,7 +63,6 @@ class MapBottomViewPresenter: MapBottomViewPresenterViewProtocol {
                 DispatchQueue.main.async {
                     resultVC.update(with: places)
                 }
-                print(places)
             case .failure(let error):
                 print(error)
             }

@@ -1,19 +1,16 @@
 //
-//  RouteCellTableViewCell.swift
+//  InfoTableViewCell.swift
 //  RouteCost
 //
-//  Created by Егор Янкович on 10.10.22.
+//  Created by Егор Янкович on 16.11.22.
 //
 
 import UIKit
 
-class RouteCellTableViewCell: UITableViewCell {
+class InfoTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var cellTitleLabel: UILabel!
-    @IBOutlet weak var naviImage: UIImageView!
-    @IBOutlet weak var arrowImage: UIImageView!
-    @IBOutlet weak var cityLabel: UILabel!
-    
+    @IBOutlet weak var infoLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

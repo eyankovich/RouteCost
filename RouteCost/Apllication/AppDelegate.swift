@@ -7,8 +7,6 @@
 
 import UIKit
 import CoreData
-import GoogleMaps
-import GooglePlaces
 
 
 @main
@@ -16,10 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        GMSServices.provideAPIKey("AIzaSyAPwLo6g1vSiqi3CSkBgIgSkUXN1htGbRY")
-        GMSPlacesClient.provideAPIKey("AIzaSyAPwLo6g1vSiqi3CSkBgIgSkUXN1htGbRY")
-        GMSServices.setMetalRendererEnabled(true)
-
         return true
     }
 

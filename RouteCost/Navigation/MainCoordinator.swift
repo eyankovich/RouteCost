@@ -25,15 +25,15 @@ class MainCoorinator: Coordinator {
     
     //MARK: - Methods
     func start() {
-      let mapVC =  ModulBuilder.shared.showRouteViewController()
+        let mapVC =  ModulBuilder.shared.showRouteViewController()
         window.rootViewController = mapVC.view
         let view = mapVC.view
         view.presenter?.showBottomSheet = {
-            let detailViewController = ModulBuilder.shared.showMapBottomViewSheet()
+            let detailViewController = ModulBuilder.shared.showMapBottomViewSheet(delegate: mapVC.view)
             let nav = UINavigationController(rootViewController: detailViewController.view)
             nav.modalPresentationStyle = .pageSheet
             if let sheet = nav.sheetPresentationController {
-                sheet.detents = [.medium(), .large()]
+                sheet.detents = [.medium()]
                 sheet.prefersGrabberVisible = true
             }
             view.present(nav, animated: true, completion: nil)

@@ -7,17 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68152110291CD323002665F7 /* VehicleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6815210F291CD323002665F7 /* VehicleModel.swift */; };
 		6815472328F42B5200DFF5EC /* RouteCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6815472128F42B5200DFF5EC /* RouteCellTableViewCell.swift */; };
 		6815472428F42B5200DFF5EC /* RouteCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6815472228F42B5200DFF5EC /* RouteCellTableViewCell.xib */; };
 		6815472628F4314B00DFF5EC /* SearchPlacesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6815472528F4314B00DFF5EC /* SearchPlacesManager.swift */; };
-		6815472C28F46CF000DFF5EC /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6815472A28F46CF000DFF5EC /* SearchResultViewController.swift */; };
-		6815472D28F46CF000DFF5EC /* SearchResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6815472B28F46CF000DFF5EC /* SearchResultViewController.xib */; };
 		6815472F28F495BC00DFF5EC /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6815472E28F495BC00DFF5EC /* LocationManager.swift */; };
 		681B4B74291153E600ADF5AB /* GoogleGeocodingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681B4B73291153E600ADF5AB /* GoogleGeocodingModel.swift */; };
 		681B4B7929117F9400ADF5AB /* ApiRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681B4B7829117F9400ADF5AB /* ApiRequestManager.swift */; };
 		681B4B7C2911906300ADF5AB /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681B4B7B2911906300ADF5AB /* Requests.swift */; };
 		681B4B7F2911949A00ADF5AB /* MapBottomSheetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681B4B7E2911949A00ADF5AB /* MapBottomSheetProtocol.swift */; };
 		681B4B822911968E00ADF5AB /* MapBottomViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681B4B812911968E00ADF5AB /* MapBottomViewPresenter.swift */; };
+		681CAE3B2924E9700070D84D /* ResultViewBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681CAE392924E9700070D84D /* ResultViewBottomSheet.swift */; };
+		681CAE3C2924E9700070D84D /* ResultViewBottomSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 681CAE3A2924E9700070D84D /* ResultViewBottomSheet.xib */; };
+		681CAE3E2924E9850070D84D /* ResultViewBottomSheetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681CAE3D2924E9850070D84D /* ResultViewBottomSheetProtocol.swift */; };
+		681CAE402924E9960070D84D /* ResultViewBottomSheetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681CAE3F2924E9960070D84D /* ResultViewBottomSheetPresenter.swift */; };
+		681CAE442924F4210070D84D /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681CAE422924F4210070D84D /* InfoTableViewCell.swift */; };
+		681CAE452924F4210070D84D /* InfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 681CAE432924F4210070D84D /* InfoTableViewCell.xib */; };
+		682609072912E0AC00B8C0E4 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682609052912E0AC00B8C0E4 /* SearchResultViewController.swift */; };
+		682609082912E0AC00B8C0E4 /* SearchResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 682609062912E0AC00B8C0E4 /* SearchResultViewController.xib */; };
+		682E79E0291C373C0067A535 /* DirectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682E79DF291C373C0067A535 /* DirectionModel.swift */; };
 		68A7196B290974F1009B7360 /* LocationBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A7196A290974F1009B7360 /* LocationBinder.swift */; };
 		68EF848828EF10B500EB4822 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EF848728EF10B500EB4822 /* AppDelegate.swift */; };
 		68EF848A28EF10B500EB4822 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EF848928EF10B500EB4822 /* SceneDelegate.swift */; };
@@ -38,23 +46,29 @@
 		68EF84C928EF2C0000EB4822 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EF84C828EF2C0000EB4822 /* ProfilePresenter.swift */; };
 		68EF84CF28EF50FA00EB4822 /* MapBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EF84CD28EF50FA00EB4822 /* MapBottomSheetViewController.swift */; };
 		68EF84D028EF50FA00EB4822 /* MapBottomSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68EF84CE28EF50FA00EB4822 /* MapBottomSheetViewController.xib */; };
-		9A14B815A1AB7DE5FF0E45E4 /* Pods_RouteCost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACFC64C0288D1F9F0BA5297 /* Pods_RouteCost.framework */; };
+		68FA2A5629265EEE00CDB002 /* RouteBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FA2A5529265EEE00CDB002 /* RouteBinder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0ACFC64C0288D1F9F0BA5297 /* Pods_RouteCost.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RouteCost.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		10B5342AC0CB36B631F86824 /* Pods-RouteCost.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouteCost.debug.xcconfig"; path = "Target Support Files/Pods-RouteCost/Pods-RouteCost.debug.xcconfig"; sourceTree = "<group>"; };
+		6815210F291CD323002665F7 /* VehicleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleModel.swift; sourceTree = "<group>"; };
 		6815472128F42B5200DFF5EC /* RouteCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteCellTableViewCell.swift; sourceTree = "<group>"; };
 		6815472228F42B5200DFF5EC /* RouteCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RouteCellTableViewCell.xib; sourceTree = "<group>"; };
 		6815472528F4314B00DFF5EC /* SearchPlacesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlacesManager.swift; sourceTree = "<group>"; };
-		6815472A28F46CF000DFF5EC /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
-		6815472B28F46CF000DFF5EC /* SearchResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultViewController.xib; sourceTree = "<group>"; };
 		6815472E28F495BC00DFF5EC /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		681B4B73291153E600ADF5AB /* GoogleGeocodingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleGeocodingModel.swift; sourceTree = "<group>"; };
 		681B4B7829117F9400ADF5AB /* ApiRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestManager.swift; sourceTree = "<group>"; };
 		681B4B7B2911906300ADF5AB /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		681B4B7E2911949A00ADF5AB /* MapBottomSheetProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBottomSheetProtocol.swift; sourceTree = "<group>"; };
 		681B4B812911968E00ADF5AB /* MapBottomViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBottomViewPresenter.swift; sourceTree = "<group>"; };
+		681CAE392924E9700070D84D /* ResultViewBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewBottomSheet.swift; sourceTree = "<group>"; };
+		681CAE3A2924E9700070D84D /* ResultViewBottomSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultViewBottomSheet.xib; sourceTree = "<group>"; };
+		681CAE3D2924E9850070D84D /* ResultViewBottomSheetProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewBottomSheetProtocol.swift; sourceTree = "<group>"; };
+		681CAE3F2924E9960070D84D /* ResultViewBottomSheetPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewBottomSheetPresenter.swift; sourceTree = "<group>"; };
+		681CAE422924F4210070D84D /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		681CAE432924F4210070D84D /* InfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoTableViewCell.xib; sourceTree = "<group>"; };
+		682609052912E0AC00B8C0E4 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		682609062912E0AC00B8C0E4 /* SearchResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultViewController.xib; sourceTree = "<group>"; };
+		682E79DF291C373C0067A535 /* DirectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionModel.swift; sourceTree = "<group>"; };
 		68A7196A290974F1009B7360 /* LocationBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationBinder.swift; sourceTree = "<group>"; };
 		68EF848428EF10B500EB4822 /* RouteCost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RouteCost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68EF848728EF10B500EB4822 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,7 +91,7 @@
 		68EF84C828EF2C0000EB4822 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		68EF84CD28EF50FA00EB4822 /* MapBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBottomSheetViewController.swift; sourceTree = "<group>"; };
 		68EF84CE28EF50FA00EB4822 /* MapBottomSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapBottomSheetViewController.xib; sourceTree = "<group>"; };
-		6C4EE11EA3F91C41A0E641F2 /* Pods-RouteCost.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RouteCost.release.xcconfig"; path = "Target Support Files/Pods-RouteCost/Pods-RouteCost.release.xcconfig"; sourceTree = "<group>"; };
+		68FA2A5529265EEE00CDB002 /* RouteBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteBinder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +99,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A14B815A1AB7DE5FF0E45E4 /* Pods_RouteCost.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,8 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				6815472028F3064E00DFF5EC /* Cell */,
-				6815472A28F46CF000DFF5EC /* SearchResultViewController.swift */,
-				6815472B28F46CF000DFF5EC /* SearchResultViewController.xib */,
+				682609052912E0AC00B8C0E4 /* SearchResultViewController.swift */,
+				682609062912E0AC00B8C0E4 /* SearchResultViewController.xib */,
 			);
 			path = MapSearchViewController;
 			sourceTree = "<group>";
@@ -151,6 +164,60 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		681CAE352924E90D0070D84D /* ResultViewBottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				681CAE382924E93D0070D84D /* Protocol */,
+				681CAE372924E9390070D84D /* View */,
+				681CAE362924E92E0070D84D /* Presenter */,
+			);
+			name = ResultViewBottomSheet;
+			sourceTree = "<group>";
+		};
+		681CAE362924E92E0070D84D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				681CAE3F2924E9960070D84D /* ResultViewBottomSheetPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		681CAE372924E9390070D84D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				681CAE412924F3FA0070D84D /* Cell */,
+				681CAE392924E9700070D84D /* ResultViewBottomSheet.swift */,
+				681CAE3A2924E9700070D84D /* ResultViewBottomSheet.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		681CAE382924E93D0070D84D /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				681CAE3D2924E9850070D84D /* ResultViewBottomSheetProtocol.swift */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		681CAE412924F3FA0070D84D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				681CAE422924F4210070D84D /* InfoTableViewCell.swift */,
+				681CAE432924F4210070D84D /* InfoTableViewCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		681CAE462925140D0070D84D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				682E79DF291C373C0067A535 /* DirectionModel.swift */,
+				6815210F291CD323002665F7 /* VehicleModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		681EEA3029103E59004B7536 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,13 +228,42 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		6889BF1F292122AD00C5656B /* SearchModalViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6889BF22292122D200C5656B /* Protocol */,
+				6889BF21292122CD00C5656B /* Presenter */,
+				6889BF20292122C900C5656B /* View */,
+			);
+			path = SearchModalViewController;
+			sourceTree = "<group>";
+		};
+		6889BF20292122C900C5656B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6889BF21292122CD00C5656B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		6889BF22292122D200C5656B /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		68EF847B28EF10B400EB4822 = {
 			isa = PBXGroup;
 			children = (
 				68EF848628EF10B500EB4822 /* RouteCost */,
 				68EF848528EF10B500EB4822 /* Products */,
-				8DD78546D9249D735DE43D7F /* Pods */,
-				AB2C5C8039FEA023362BD329 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -183,9 +279,12 @@
 			isa = PBXGroup;
 			children = (
 				68EF84A328EF110D00EB4822 /* Apllication */,
+				6889BF1F292122AD00C5656B /* SearchModalViewController */,
 				681EEA3029103E59004B7536 /* Networking */,
 				68EF84BA28EF240700EB4822 /* Extensions */,
+				681CAE462925140D0070D84D /* Models */,
 				68EF84A228EF110200EB4822 /* Managers */,
+				68FA2A5429265EA300CDB002 /* Binders */,
 				68EF84A028EF10F000EB4822 /* Navigation */,
 				68EF84A128EF10F900EB4822 /* Screens */,
 				68EF849328EF10BA00EB4822 /* Assets.xcassets */,
@@ -220,6 +319,7 @@
 				68EF84A728EF115100EB4822 /* MapView */,
 				68EF84CA28EF50CF00EB4822 /* MapViewBottomSheet */,
 				6815472728F434E700DFF5EC /* MapSearchViewController */,
+				681CAE352924E90D0070D84D /* ResultViewBottomSheet */,
 				68EF84A828EF116300EB4822 /* Profile */,
 			);
 			path = Screens;
@@ -230,7 +330,6 @@
 			children = (
 				6815472528F4314B00DFF5EC /* SearchPlacesManager.swift */,
 				6815472E28F495BC00DFF5EC /* LocationManager.swift */,
-				68A7196A290974F1009B7360 /* LocationBinder.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -341,21 +440,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		8DD78546D9249D735DE43D7F /* Pods */ = {
+		68FA2A5429265EA300CDB002 /* Binders */ = {
 			isa = PBXGroup;
 			children = (
-				10B5342AC0CB36B631F86824 /* Pods-RouteCost.debug.xcconfig */,
-				6C4EE11EA3F91C41A0E641F2 /* Pods-RouteCost.release.xcconfig */,
+				68A7196A290974F1009B7360 /* LocationBinder.swift */,
+				68FA2A5529265EEE00CDB002 /* RouteBinder.swift */,
 			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		AB2C5C8039FEA023362BD329 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0ACFC64C0288D1F9F0BA5297 /* Pods_RouteCost.framework */,
-			);
-			name = Frameworks;
+			path = Binders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,11 +456,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68EF849B28EF10BA00EB4822 /* Build configuration list for PBXNativeTarget "RouteCost" */;
 			buildPhases = (
-				AA01E81C354CD1D113ACBD25 /* [CP] Check Pods Manifest.lock */,
 				68EF848028EF10B500EB4822 /* Sources */,
 				68EF848128EF10B500EB4822 /* Frameworks */,
 				68EF848228EF10B500EB4822 /* Resources */,
-				1E12729435B9702514C51269 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -420,57 +509,17 @@
 			files = (
 				68EF84B128EF202200EB4822 /* ProfileViewController.xib in Resources */,
 				68EF849728EF10BA00EB4822 /* LaunchScreen.storyboard in Resources */,
+				681CAE3C2924E9700070D84D /* ResultViewBottomSheet.xib in Resources */,
 				68EF84B928EF213F00EB4822 /* RouteViewController.xib in Resources */,
+				681CAE452924F4210070D84D /* InfoTableViewCell.xib in Resources */,
 				68EF849428EF10BA00EB4822 /* Assets.xcassets in Resources */,
 				68EF84D028EF50FA00EB4822 /* MapBottomSheetViewController.xib in Resources */,
 				6815472428F42B5200DFF5EC /* RouteCellTableViewCell.xib in Resources */,
-				6815472D28F46CF000DFF5EC /* SearchResultViewController.xib in Resources */,
+				682609082912E0AC00B8C0E4 /* SearchResultViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		1E12729435B9702514C51269 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RouteCost/Pods-RouteCost-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RouteCost/Pods-RouteCost-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RouteCost/Pods-RouteCost-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AA01E81C354CD1D113ACBD25 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RouteCost-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		68EF848028EF10B500EB4822 /* Sources */ = {
@@ -480,11 +529,16 @@
 				6815472628F4314B00DFF5EC /* SearchPlacesManager.swift in Sources */,
 				68EF84CF28EF50FA00EB4822 /* MapBottomSheetViewController.swift in Sources */,
 				68EF84C328EF2ACA00EB4822 /* RoutePresenterProtocol.swift in Sources */,
+				68FA2A5629265EEE00CDB002 /* RouteBinder.swift in Sources */,
 				681B4B7929117F9400ADF5AB /* ApiRequestManager.swift in Sources */,
+				681CAE402924E9960070D84D /* ResultViewBottomSheetPresenter.swift in Sources */,
 				68EF848828EF10B500EB4822 /* AppDelegate.swift in Sources */,
 				681B4B7C2911906300ADF5AB /* Requests.swift in Sources */,
+				682E79E0291C373C0067A535 /* DirectionModel.swift in Sources */,
 				68EF84BD28EF242700EB4822 /* UIColorExtension.swift in Sources */,
+				681CAE3E2924E9850070D84D /* ResultViewBottomSheetProtocol.swift in Sources */,
 				68EF84C528EF2B3200EB4822 /* RoutePresenter.swift in Sources */,
+				681CAE3B2924E9700070D84D /* ResultViewBottomSheet.swift in Sources */,
 				68EF84AA28EF18AF00EB4822 /* TabBarController.swift in Sources */,
 				68EF84BF28EF25BC00EB4822 /* ModuleBuilder.swift in Sources */,
 				6815472F28F495BC00DFF5EC /* LocationManager.swift in Sources */,
@@ -494,12 +548,14 @@
 				68A7196B290974F1009B7360 /* LocationBinder.swift in Sources */,
 				68EF849228EF10B500EB4822 /* RouteCost.xcdatamodeld in Sources */,
 				681B4B74291153E600ADF5AB /* GoogleGeocodingModel.swift in Sources */,
+				681CAE442924F4210070D84D /* InfoTableViewCell.swift in Sources */,
 				68EF84C128EF25C900EB4822 /* MainCoordinator.swift in Sources */,
 				681B4B822911968E00ADF5AB /* MapBottomViewPresenter.swift in Sources */,
 				6815472328F42B5200DFF5EC /* RouteCellTableViewCell.swift in Sources */,
-				6815472C28F46CF000DFF5EC /* SearchResultViewController.swift in Sources */,
 				68EF848A28EF10B500EB4822 /* SceneDelegate.swift in Sources */,
+				68152110291CD323002665F7 /* VehicleModel.swift in Sources */,
 				68EF84C728EF2BA300EB4822 /* ProfileProtocol.swift in Sources */,
+				682609072912E0AC00B8C0E4 /* SearchResultViewController.swift in Sources */,
 				68EF84C928EF2C0000EB4822 /* ProfilePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -634,7 +690,6 @@
 		};
 		68EF849C28EF10BA00EB4822 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10B5342AC0CB36B631F86824 /* Pods-RouteCost.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -664,7 +719,6 @@
 		};
 		68EF849D28EF10BA00EB4822 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C4EE11EA3F91C41A0E641F2 /* Pods-RouteCost.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

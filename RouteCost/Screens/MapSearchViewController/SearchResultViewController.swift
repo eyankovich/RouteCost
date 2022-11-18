@@ -2,21 +2,28 @@
 //  SearchResultViewController.swift
 //  RouteCost
 //
-//  Created by Егор Янкович on 10.10.22.
+//  Created by Егор Янкович on 2.11.22.
 //
 
 import UIKit
 import MapKit
 
-class SearchResultViewController: UIViewController {
-    
-    // MARK: - @IBOutlet Variables
-    @IBOutlet weak var tableView: UITableView!
+class SearchResultViewController: UITableViewController {
     
     // MARK: - Variables
     let cellId = "RouteCellTableViewCell"
-    var handleMapSearchDelegate: HandleMapSearch? = nil
-
+    var handleMapSearchDelegate: HandleMapSearch
+    var handleSearchResultTapDelegate: HandleSearchResultTap? = nil
+    
+    init(delegate: HandleMapSearch) {
+        self.handleMapSearchDelegate = delegate
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     // MARK: - Private Variables
     private var places: [MKMapItem] = []
     
@@ -31,38 +38,35 @@ class SearchResultViewController: UIViewController {
         tableView.register(UINib(nibName: cellId, bundle: nil), forCellReuseIdentifier: cellId)
         tableView.delegate = self
         tableView.dataSource = self
-        self.handleMapSearchDelegate = self
     }
     
     public func update(with places: [MKMapItem]) {
         self.places = places
         tableView.reloadData()
     }
- }
-
-// MARK: - Extensions
-extension SearchResultViewController: UITableViewDataSource, UITableViewDelegate {
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
+    // MARK: - Extensions
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return places.count
     }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! RouteCellTableViewCell
         cell.cellTitleLabel.text = places[indexPath.row].name
+        cell.cityLabel.text = "\(places[indexPath.row].placemark.locality ?? ""), \(places[indexPath.row].placemark.country ?? "")"
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedItem = places[indexPath.row].placemark
-        handleMapSearchDelegate?.dropPinZoomIn(placemark: selectedItem)
+        handleSearchResultTapDelegate?.getChoosenPlace(placemark: selectedItem)
+        handleMapSearchDelegate.dropPinZoomIn(placemark: selectedItem)
         tableView.deselectRow(at: indexPath, animated: true)
         dismiss(animated: true)
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
     }
-    
 }
-

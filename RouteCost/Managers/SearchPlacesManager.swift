@@ -41,3 +41,7 @@ final class PlacesManager {
 protocol HandleMapSearch {
     func dropPinZoomIn(placemark: MKPlacemark)
 }
+
+protocol HandleSearchResultTap {
+    func getChoosenPlace(placemark: MKPlacemark)
+}

@@ -6,7 +6,5 @@ target 'RouteCost' do
   use_frameworks!
 
   # Pods for RouteCost
-    pod 'GoogleMaps', '7.1.0'
-	pod 'GooglePlaces'
 
 end
