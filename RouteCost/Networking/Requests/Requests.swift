@@ -11,7 +11,7 @@ import CoreLocation
 struct GooglePositionGeocoding: DataRequest {
     
     typealias Responce = [GoogleGeocodingModel]
-    private let apiKey: String = "AIzaSyAPwLo6g1vSiqi3CSkBgIgSkUXN1htGbRY"
+    private let apiKey: String = ""
     var coordinate: CLLocation
     
     init(coordinate: CLLocation) {
